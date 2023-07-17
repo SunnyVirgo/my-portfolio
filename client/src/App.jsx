@@ -1,16 +1,29 @@
-import './App.css'
+import React from 'react'
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navbar from './components/navbar'
+import Home from './components/home-section'
+import AboutMe from './components/about-section'
+import Project from './components/projects'
+import Contacts from './components/contacts'
 
 function App() {
 
   return (
-    <>
-      <div>
-       
-      <h1 className="text-3xl font-bold">
-      Hello world!
-    </h1>
-     </div>
-    </>
+    <Router>
+    <Navbar />
+    <section id="home-section">
+      <Home />
+    </section>
+    <section id="about-section">
+    <AboutMe/>
+    </section>
+    <section id="projects-section">
+    <Project/>
+    </section>
+    <section id="contacts-section">
+    <Contacts />
+    </section>
+    </Router>
   )
 }
 
