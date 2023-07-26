@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+    .list-item-line::after {
+      content: "";
+      display: block;
+     width: 100%;
+     background-color: rgb(47, 177, 7);
+     height: .12rem;
+     border-radius: .5rem;
+     margin-top: -.15rem;
+     animation: line-animation .5s ease forwards;
+     /* Adjust this value to control the spacing between the line and the list item */
+    }
+    @keyframes line-animation {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+  }
+  

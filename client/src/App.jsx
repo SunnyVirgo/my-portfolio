@@ -5,10 +5,13 @@ import Home from './components/home-section'
 import AboutMe from './components/about-section'
 import Project from './components/projects'
 import Contacts from './components/contacts'
+import '@fontsource/montserrat'
+
 
 function App() {
 
   return (
+    <div style={{ fontFamily: 'Montserrat, sans-serif' }}>
     <Router>
     <Navbar />
     <section id="home-section">
@@ -24,6 +27,7 @@ function App() {
     <Contacts />
     </section>
     </Router>
+    </div>
   )
 }
 
