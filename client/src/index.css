@@ -21,5 +21,24 @@
           width: 100%;
         }
       }
+
+      /* For screens with a width of 640px or less */
+@media (max-width: 640px) {
+  .dot-grid {
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+}
+
+/* For screens with a width of 768px or less */
+@media (max-width: 768px) {
+  .dot-grid {
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+}
+
+/* Add more media queries as needed for other screen sizes */
+
   }
   
