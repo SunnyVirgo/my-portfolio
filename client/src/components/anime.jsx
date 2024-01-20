@@ -3,7 +3,7 @@ import React from 'react'
 
 const DropGrid = () =>{
  return (
-    <div className='relative grid h-screen bg-transparent px-8 py-8 z-8'>
+    <div className='relative grid h-screen bg-transparent px-8 py-8'>
         <DotGrid />
     </div>
  )

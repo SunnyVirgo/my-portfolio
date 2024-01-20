@@ -49,11 +49,11 @@ function Name() {
 
   return (
     <div>
-      <p className="text-5xl font-semib text-white">Hi, I'm Sunny Virgo<span className="text-6xl text-green-600">.</span></p>
-      <p className="text-4xl font-semib text-white"><span>A</span> {" "}
-        <span className="text-green-600 text-5xl">{text}</span>
+      <div className="flex flex-row justify-start items-center text-5xl font-semi-bold text-gray-300 lg:text-5xl flex-row md:text-3xl flex-col sm:text-2xl sm:flex sm:flex-row sm:items-center "><div>Hi,<span className="invisible text-sm">h</span></div><div> I'm Sunny Virgo<span className="text-6xl text-green-600">.</span></div></div>
+      <div className="text-4xl font-semib text-gray-300 lg:text-5xl md:text-3xl sm:text-2xl"><span>A</span> {" "}
+        <span className="text-green-600 text-5xl lg:text-5xl md:text-3xl sm:text-2xl">{text}</span>
         {showCursor && <span className="cursor text-green-600">|</span>}
-      </p>
+      </div>
     </div>
   );
 }

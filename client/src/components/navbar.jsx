@@ -3,7 +3,6 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("home-section") 
-
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     const sections = ["home-section", "about-section", "projects-section", "contacts-section"];
@@ -32,7 +31,7 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
     return (
-        <div className="fixed w-full flex bg-slate-900 justify-between z-20 p-5">
+        <div className="fixed w-full flex bg-slate-900 justify-between z-40 p-5">
           <div><h1 className="text-lg font-extrabold tracking-widest"><span className="text-green-600">Port</span><span className="text-white">folio</span></h1></div>
             <div>
                 <ul className="flex flex-row text-white font-bold text-sm">
@@ -52,7 +51,7 @@ function Navbar() {
                       className="px-3 cursor-pointer"
                       onClick={()=>scrollToSection("about-section")}
                     >
-                    <li className={`px-3 ${activeSection === "about-section" ? "list-item-line" : ""}`}>About me</li>
+                    <li className={`px-3 ${activeSection === "about-section" ? "list-item-line" : ""}`}>About</li>
                     </ScrollLink>
                     <ScrollLink
                       to="projects-section"

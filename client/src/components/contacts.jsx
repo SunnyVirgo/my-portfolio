@@ -1,16 +1,18 @@
 import React from "react";
+import Form from "./form";
 
 function Contacts() {
+    const section = "contacts-section"
     return(
 
-        <div className="h-screen bg-slate-900">
+        <div className="bg-slate-900">
             <br /><br /><br />
-            <div>
+            <div className="mb-5">
                 <div className="flex justify-center">
                     <span className="text-3xl uppercase text-white font-bold text-center leading-10">Get in Touch</span>
                 </div>
-                    <div className="grid grid-cols-3 gap-6 p-8">
-                        <div className="p-2 bg-slate-800 rounded-lg">
+                    <div className="flex justify-evenly p-8 lg:flex lg:flex-row md:flex-row sm:flex-col items-center xs:flex flex-col items-center">
+                        <div className="p-2 bg-slate-800 rounded-lg w-1/4 lg:w-1/4 md:w-1/5 sm:w-3/5 mb-5 xs:w-full">
                             <div className="text-white flex justify-center">
                                 <div className="bg-slate-600 rounded-full p-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
@@ -21,7 +23,7 @@ function Contacts() {
                                 <div className="text-sm font-semibold text-green-600 uppercase tracking-tighter leading-relaxed text-center">address</div>
                                 <div className="capitalize px-3 text-center text-gray-400">Sitio Pana-an, Barangay ysulat tobias fornier, antique</div>
                         </div>
-                        <div className="p-2 bg-slate-800 rounded-lg">
+                        <div className="p-2 bg-slate-800 rounded-lg w-1/4 lg:w-1/4 md:w-1/5 sm:w-3/5 mb-5 xs:w-full">
                         <div className="text-white flex justify-center">
                             <div className="bg-slate-700 rounded-full p-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
@@ -34,7 +36,7 @@ function Contacts() {
                             <div className="text-gray-500 text-center">+639764565238</div>
                             <div className="text-gray-500 text-center">+639764565238</div>
                         </div>
-                        <div className="p-2 bg-slate-800 rounded-lg">
+                        <div className="p-2 bg-slate-800 rounded-lg w-1/4 lg:w-1/4 md:w-1/5 sm:w-3/5 mb-5 xs:w-full">
                         <div className="text-white flex justify-center">
                             <div className="bg-slate-700 rounded-full p-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
@@ -51,7 +53,12 @@ function Contacts() {
                         </div>
                     </div>
             </div>
-        
+            <div>
+                <div className="text-center text-white font-semi-bold text-2xl">
+                    <p>Feel free to message me.</p>
+                </div>
+                <div><Form/></div>
+            </div>
         </div>
     )
 }

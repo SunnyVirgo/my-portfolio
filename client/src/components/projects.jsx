@@ -3,7 +3,7 @@ import React from "react";
 function Project() {
     return(
         <>
-        <div className="h-screen bg-red-400">This the project section</div>
+        <div className="h-screen bg-slate-900">This the project section</div>
         </>
     )
 }
